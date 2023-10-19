@@ -19,7 +19,7 @@ a{
 }
 
 
-.link:after{
+.link::after{
   position: absolute;
   bottom: -5px;
   left: 0;
