@@ -1,0 +1,122 @@
+html{
+  overflow: auto;
+  font-size: 100%;
+}
+body{
+  font-weight: 300px;
+  width: 100%;
+  color: #333;
+}
+ul{
+  display: block;
+  list-style: none;
+}
+a{
+  transition: .5s;
+  text-decoration: none;
+  color: #fff;
+  
+}
+a:hover{
+  opacity: 0.5;
+}
+a::after{
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  display: block;
+  width: 0;
+  display: block;
+  width: 0;
+  height: 1px;
+  content: '';
+  transition:  width 0.3s;
+
+}
+.hbg-btn{
+  width: 40px;
+  height: 33px;
+  position: relative;
+  z-index: 150;
+  cursor: pointer;
+}
+.hbg-btn>span{
+  position: absolute;
+  right: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #fff;
+}
+.hbg-btn>span:first-of-type{
+  top: 0;
+}
+.hbg-btn>span:nth-of-type(2){
+  top: 50%;
+}
+.hbg-btn>span:last-of-type{
+  top: 100%;
+}
+.hbg-btn.active>span:first-of-type, .hbg-btn.hbg-btn.active>span:last-of-type{
+  top: 50%;
+}
+.hbg-btn.active>span:first-of-type{
+  transform: translateY(-50%) rotate(45deg);
+}
+.hbg-btn.active>span:nth-of-type(2){
+  opacity: 0;
+}
+.hbg-btn.hbg-btn.active>span:last-of-type{
+  transform: translateY(-50%) rotate(-45deg);
+}
+/* header */
+header{
+  display: flex;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+ color: #ffffff;
+}
+.site-ttl{
+  font-size: 20px;
+}
+.menu ul{
+  display: flex;
+  gap: 0 15px;
+  color: #fff;
+}
+.menu{
+position: fixed;
+top: 10;
+right: 0;
+
+}
+
+.mainvisual{
+background-image: url(../img2/alexandre-guimont-S9miGKjxmb4-unsplash.jpg);
+/* margin-top: 5rem; */
+height: 40rem;
+background-repeat: no-repeat;
+background-size: cover;
+position: relative;
+color: #fff;
+width: 100%;
+}
+.main-ttl{
+  position: absolute;
+  top: 12rem;
+  left: 10rem;
+  text-align: center;
+}
+.c-btn{
+  display: block;
+  margin: 90px auto;
+  text-align: center;
+  color: #fff;
+  position: relative;
+}
+.c-btn::after{
+  content: '▶︎';
+   
+}
