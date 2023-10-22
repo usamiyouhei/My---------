@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&amp;display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/style.css" />
   </head>
@@ -32,7 +33,7 @@
     <main>
       <div class="mainvisual">
         <div class="main-ttl">
-          <h1>WEB DESIGN SPECIALIST</h1>
+          <h1 class="title">WEB DESIGN SPECIALIST</h1>
           <p>お客様の夢を叶えるWebサイトを制作</p>
           <a class="c-btn" href="#contact">CONTACT</a>
         </div>
@@ -40,20 +41,22 @@
 
       <section class="news-section">
         <div class="news-inner">
-          <h2 class="sec-ttl">NEWS</h2>
+          <div class="sec-ttl">
+          <h2>NEWS</h2>
           <span>お知らせ</span>
+          </div>
           <ul class="news-list">
             <li>2030.02.01</li>
             <span>お知らせ</span>
-            <a href="#">Webデザインニュースサイト「ウェブマガジン」に取材いただきました</a >
+            <a class="n-link" href="#">Webデザインニュースサイト「ウェブマガジン」に取材いただきました</a >
 
             <li>2030.01.25</li>
             <span>制作実績</span>
-            <a href="#">Smoothiesta様のWebサイトを制作いたしました</a>
+            <a class="n-link" href="#">Smoothiesta様のWebサイトを制作いたしました</a>
 
             <li>2030.01.20</li>
             <span>採用</span>
-            <a href="#">Webデザイナーを１名募集中です！</a>
+            <a class="n-link" href="#">Webデザイナーを１名募集中です！</a>
           </ul>
         </div>
       </section>
@@ -61,42 +64,63 @@
       <section class="servise-section">
         <div class="service-inner">
           <div class="sec-ttl">
-            <h2>SERVICE</h2>
+          <h2>SERVICE</h2>
             <span>事業内容</span>
           </div>
+        </div> 
+        <div class="service-item">
           <div class="wrapper">
             <img src="../img/IMG_3044.JPG" alt="" />
+            <div class="service">
             <h3>Webサイト制作</h3>
             <p>
               新規サイトの制作はもちろんサイトリニューアルやランディングページの制作も可能です。
             </p>
           </div>
+          </div>
           <div class="wrapper">
-            <img src="../img/IMG_2953.jpeg" alt="" />
+            <img src="../img/IMG_3047.JPG" alt="" />
+            <div class="service">
             <h3>Webサイト運用</h3>
             <p>サイトの更新作業や独自のアクセス解析に基づいたサイト改善のご提案をいたします。
             </p>
           </div>
+          </div>
           <div class="wrapper">
-            <img src="../img/IMG_3047.JPG" alt="" />
+            <img src="../img/IMG_2953.jpeg" alt="" />
+           <div class="service">
             <h3>アプリ開発</h3>
             <p>スマートフォンアプリ開発の他、Vue.jsやReactによるWebアプリの開発が可能です。
             </p>
           </div>
+          </div>
+        </div>
+        <div class="s-btn">
           <a class="m-btn" href="#">MORE</a>
         </div>
+        </div>
+      
       </section>
       <section class="works-section">
         <div class="works-inner">
+          <div class="swiper-wrapper">
+            <img src="img/IMG_1864.jpeg" alt="">
+          </div>
+          
+          
+          <div class="works-inner2">
           <div class="sec-ttl">
            <h2>WORKS</h2>
            <span>制作実績</span>
           </div>
+          <div class="works-item">
           <p>様々なジャンルのWebサイト制作が可能です。
             ご購入やお申込み数の増加などを実現します！
             </p>
           <a class="m-btn" href="#">MORE</a>
+           </div>
         </div>
+      </div>
       </section>
       <section class="company-section">
         <div class="company-inner">
@@ -104,16 +128,62 @@
             <h2>COMPANY</h2>
             <span>私たちについて</span>
           </div>
-          <h3>サイトのゴール = 夢を叶えること</h3>
+          <div class="messege">
+          <span>サイトのゴール = 
+            夢を叶えること
+          <span>
+          </div>
           <p>
-            お客様の夢を叶えること。
-            それがWebサイトのゴールであり、私たちが目指すことです。
-            だからこそちゃんと成果を出すサイトを全力でお作りします。
-            お客様の笑顔を見たい。
-            夢を実現する手助けをさせてください。</p>
+            お客様の夢を叶えること。<br>
+            それがWebサイトのゴールであり、私たちが目指すことです。<br>
+            だからこそちゃんと成果を出すサイトを全力でお作りします。<br>
+            お客様の笑顔を見たい。<br>
+            夢を実現する手助けをさせてください。<br>
+          </p>
+          <a class="m-btn" href="#">MORE</a>
+
         </div>
       </section>
+
+      <section class="recruit-section">
+        <div class="recruit-inner">
+          <div class="sec-ttl">
+            <h2>RECRUIT</h2>
+            <span>採用情報</span>
+          </div>
+          <p>私たちと一緒に働きませんか？</p>
+          <a class="m-btn" href="#">MORE</a>
+        </div>
+      </section>
+
+      <section class="contact-section">
+        <div class="contact-inner">
+       <div class="sec-ttl">
+        <h2>CONTACT</h2>
+        <span>お問い合わせ</span>
+       </div>
+       <p>Webサイトの制作のご依頼やお見積りなど、お気軽にご相談ください。</p>
+       <a class="m-btn" href="#">MORE</a>
+      </div>
+      </section>
     </main>
+
+    <footer class="footer">
+      <nav class="footer-nav">
+        <ul>
+          <li class="list"><a class="link" href="#home">HOME</a></li>
+          <li class="list"><a class="link" href="#news">NEWS</a></li>
+          <li class="list"><a class="link" href="#servise">SERVISE</a></li>
+          <li class="list"><a class="link" href="#works">WORKS</a></li>
+          <li class="list"><a class="link" href="#company">COMPANY</a></li>
+          <li class="list"><a class="link" href="#recruit">RECRUIT</a></li>
+          <li class="list"><a class="link" href="#contact">CONTACT</a></li>
+        </ul>
+      </nav>
+      <div class="copy-right">
+        <a href="#" class="copyright-link">©PON DESIGN</a>
+      </div>
+    </footer>
     <script src="main.js"></script>
   </body>
 </html>
