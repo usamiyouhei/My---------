@@ -21,6 +21,12 @@ h2{
   font-weight: bold;
   font-size: 35px;
 }
+.sp{
+  display: none;
+}
+.pc{
+  display: flex;
+}
 
 .link:hover::after{
   width: 100%;
@@ -90,16 +96,33 @@ max-width: 100%;
   font-size: 4rem;
 }
 .c-btn{
-  display: inline-block;
-  margin: 90px auto;
-  text-align: center;
-  color: #fff;
   position: relative;
+  font-weight: bold;
+  line-height: 1.4;
+  display: inline-block;
+  width: 220px;
+  padding: 18px 0;
+  transition: 0.3s;
+  text-align: center;
+  text-decoration: none;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #fff;
+  border-radius: 50px;
+  font-size: 0.875rem;
 }
 .c-btn::after{
-  content: '▶︎';
-   position: absolute;
-   top: 0;
+  position: absolute;
+    top: 50%;
+    right: 1.5em;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f0da";
+    transition: 0.3s;
+    /* -webkit-transform: translateY(-50%); */
+    transform: translateY(-50%);
+    /* font-size: 14px; */
+    font-size: 0.875rem;
 }
 .news-section{
   padding: 0 10px;
@@ -126,8 +149,17 @@ max-width: 100%;
   margin: 0 auto;
   width: 100%;
 }
-.news-list>span{
-  display: block;
+.news-list span{
+  font-weight: bold;
+    display: inline-block;
+    width: 80px;
+    padding: 2px 10px;
+    text-align: center;
+    color: #333;
+    border-radius: 20px;
+    background-color: #e8e8e8;
+    font-size: 12px;
+    font-size: 0.75rem;
 }
 .news-list>li{
 display: flex;
@@ -168,11 +200,16 @@ text-align: center;
   display: inline-block;
   font-size: 16px;
   font-weight: bold;
+  text-align: center;
   width: 200px;
   height: 50px;
   margin: 0 auto;
   line-height: 50px;
   position: relative;
+  border-radius: 50px;
+  background-image: linear-gradient(to right, #33a435 0%, #0d6543 51%, #33a479 100%);
+  background-size: 200% auto;
+  font-size: 0.875rem;
 }
 .m-btn::after{
   content: '▶︎';
@@ -223,4 +260,101 @@ transform: translateY(-50%);
 .company-inner p{
 margin: 60px;
 line-height: 2;
+}
+
+.recruit-section{
+  display: flex ;
+  text-align: center;
+  /* justify-content: space-between; */
+  background-image: url(../img/IMG_1864.jpeg);
+  background-size:cover ;
+  background-repeat: no-repeat;
+  margin: 50px 10px;
+  height: 350px;
+}
+.recruit-inner{
+  background-color: #f0f0f0;
+padding: 30px 0;
+}
+.recruit-inner p{
+  margin: 60px;
+}
+.contact-section{
+  text-align: center;
+  background-color: #f0f0f0;
+margin-top: 80px;
+height: 400px;
+padding: 10px;
+}
+.contact-inner{
+  margin-top: 40px;
+}
+.contact-section p{
+  margin: 50px;
+  line-height: 2;
+}
+.contact-section sp{
+  display: none;
+}
+footer{
+  background-color: #333;
+  width: 100%;
+height: 180px;
+}
+.footer-inner{
+  visibility: center;
+}
+.footer-nav{
+  text-align: center;
+}
+.footer-list{
+  display: flex;
+  flex-wrap: wrap;
+  padding: 40px; 
+  font-size: 12px;
+  justify-content: center;
+  margin: 0 auto;
+}
+.copy-right{
+  display: block;
+text-align: center;
+font-size: 10px;
+padding: 20px;
+}
+
+.page-top-link{
+  display: block;
+    width: 50px;
+    height: 50px;
+    padding: 12px;
+    text-align: center;
+    text-decoration: none;
+    color: #391e88;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+    background-color: #fff;
+
+}
+.arrow-up::before{
+  content: "\f062";
+  font-family: "Font Awesome 6 Free";
+}
+@media screen and (max-width: 768px) {
+  .sp{
+    display: block;
+  }
+  .pc{
+    display: none;
+  }
+  .header-menu{
+    display: none;
+  }
+  
+  .hbg-btn{
+    display: block;
+    width: 30px;
+    height: 30px;
+    background-color: #fff;
+    position: relative;
+  }
+  
 }
