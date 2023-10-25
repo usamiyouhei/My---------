@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+    
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/style.css" />
   </head>
@@ -21,24 +23,32 @@
           <li class="list"><a class="link" href="#recruit">RECRUIT</a></li>
           <li class="list"><a class="link" href="#contact">CONTACT</a></li>
         </ul>
-        <div class="hbg-btn">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
+        
       </nav>
+    </div>
+    <div class="hbg-btn">
+      <span></span>
+      <!-- <span></span>
+      <span></span> -->
     </div>
     </header>
 
-    <main>
+   
       <div class="mainvisual">
+        <div class="mv-inner">
         <div class="main-ttl">
           <h1 class="title">WEB DESIGN SPECIALIST</h1>
           <p>お客様の夢を叶えるWebサイトを制作</p>
-          <a class="c-btn" href="#contact">CONTACT</a>
+        <a class="c-btn" href="#contact">CONTACT</a>
         </div>
       </div>
+        <div class="contact-link">
+          
+        </div>
+      
+    </div>
 
+      <main>
       <section class="news-section">
         <div class="news-inner inner">
           <div class="sec-ttl">
@@ -103,23 +113,28 @@
         <div class="s-btn">
           <a class="m-btn" href="#">MORE</a>
         </div>
-        </div>
-      
       </section>
+
+
       <section class="works-section">
         <div class="works-inner">
-          <div class="swiper-wrapper">
-            <img src="img/IMG_1864.jpeg" alt="">
+            <div class="swiper">
+              <!-- Additional required wrapper -->
+              <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide"><img src="img/IMG_1864.jpeg" alt=""></div>
+                <div class="swiper-slide"><img src="img/IMG_2034.jpeg" alt=""></div>
+                <div class="swiper-slide"><img src="img/IMG_2617.JPG" alt=""></div>
+              </div>
           </div>
-          
-          
+          </div>      
           <div class="works-inner2">
           <div class="sec-ttl">
            <h2>WORKS</h2>
            <span>制作実績</span>
           </div>
           <div class="works-item">
-          <p>様々なジャンルのWebサイト制作が可能です。
+          <p>様々なジャンルのWebサイト制作が可能です。<br>
             ご購入やお申込み数の増加などを実現します！
             </p>
           <a class="m-btn" href="#">MORE</a>
@@ -127,6 +142,8 @@
         </div>
       </div>
       </section>
+
+
       <section class="company-section">
         <div class="company-inner">
           <div class="sec-ttl">
@@ -134,9 +151,9 @@
             <span>私たちについて</span>
           </div>
           <div class="messege">
-          <span>サイトのゴール = 
+          <span>サイトのゴール = <br class="sp-var">
             夢を叶えること
-          <span>
+          </span>
           </div>
           <p>
             お客様の夢を叶えること。<br>
@@ -146,7 +163,6 @@
             夢を実現する手助けをさせてください。<br>
           </p>
           <a class="m-btn" href="#">MORE</a>
-
         </div>
       </section>
 
@@ -160,8 +176,6 @@
           <p>私たちと一緒に働きませんか？</p>
           <a class="m-btn" href="#">MORE</a>
         </div>
-          
-      </div>
       </div>
       </section>
 
@@ -203,6 +217,8 @@
       </i>
     </a>
     </div>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script src="main.js"></script>
   </body>
 </html>
