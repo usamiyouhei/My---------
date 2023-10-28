@@ -1,14 +1,24 @@
 // .hbg-btn
 document.querySelector('.hbg-btn').addEventListener('.click', function(){
   this.classList.toggle('.active');
-  document.querySelector('.menu').classList.toggle('.active');
-})
+  document.querySelector('.header-nav').classList.toggle('.active');
+});
 
 //スワイパー
 const swiper = new Swiper('.swiper', {
   // Optional parameters
-  direction: 'vertical',
   loop: true,
+
+  pagination: {
+    el: '.swiper-pagination',
+    clickable:'true',
+  },
+
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
 });
 
 //スムーススクロール
@@ -27,9 +37,10 @@ for(let i = 0; i < anchors.length; i++){
     const target = document.getElementById(href.replace('#', ''));
 
     // スクロール位置
-    const position = window.pageYOffset + target.getBoundingClientRect().top - headerHeight;
+    const position = window.scrollY + target.getBoundingClientRect().top - headerHeight;
     window.scroll({
       top: position,
       behavior: 'smooth'
     });
-  });
+});
+}
