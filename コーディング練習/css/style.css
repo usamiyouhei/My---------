@@ -60,7 +60,7 @@ header{
   z-index:  100;
   color: #ffffff;
   background-color: #03440c;
-  width: calc(100% - 60px);
+  max-width: 100%;
   padding: 0 30px;
   justify-content: space-between;
 }
@@ -482,8 +482,8 @@ padding: 20px;
 }
 .page-top-link{
   display: block;
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
     padding: 12px;
     text-align: center;
     text-decoration: none;
@@ -504,7 +504,7 @@ padding: 20px;
   header {
     height: 64px;
     padding: 0 15px;
-    width: calc(100% - 30px);
+    width: 100%;
   }
 
 
