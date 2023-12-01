@@ -42,3 +42,20 @@ pageTop.addEventListener("click", function () {
   });
   return false;
 });
+
+// フェードイン
+//スクロールイベント
+window.addEventListener('scroll', function(){
+  //すべての.fadeを取得
+  const fade = document.querySelectorAll('.fade');
+
+  for(let i = 0; i < fade.length; i++){
+    //fadeの高さ取得
+    var targetTop = fade[i].offsetTop;
+
+    //画面のスクロール量 + 300px > .fadeのoffsetの高さ
+    if(window.scrollY + 300 > targetTop){
+      fade[i].classList.add('show');
+    }
+  }
+});

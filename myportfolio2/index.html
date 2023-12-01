@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>portfolio top</title>
    <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
@@ -25,17 +25,17 @@
   <header class="header" id="Header">
     <nav class="header-nav">
       <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#news">News</a></li>
-        <li><a href="#works">Works</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="#About">About</a></li>
+        <li><a href="#News">News</a></li>
+        <li><a href="#Works">Works</a></li>
+        <li><a href="#Contact">Contact</a></li>
       </ul>
      </nav>
   </header>
   
   <section  class="mainvisual">
-    <div class="mv-container">
-   <div class="main-container1">
+    <div class="mv-container container">
+   <div class="main-container1 ">
       <div class="logo">
         <img src="./img2/Youhei USAMIlogo.svg" alt="">
       </div>
@@ -48,15 +48,16 @@
         <span class="scroll">scroll</span>
       </div>
     </div>
-   </div>
+   
 
-   <div class="main-container2">
+   <div class="main-container2 ">
     <div class="main-img2">
     </div>
     <div class="main-title">
       <img src="./img2/Creating the Only One...タイトル.svg" alt="">
     </div>
   </div>
+</div>
   </section>
 
   <div class="sidebar">
@@ -77,16 +78,16 @@
     </div>
       <div class="slide-menu">
         <ul>
-          <li><a href="#about">About</a></li>
-          <li><a href="#news">News</a></li>
-          <li><a href="#works">Works</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="#About">About</a></li>
+          <li><a href="#News">News</a></li>
+          <li><a href="#Works">Works</a></li>
+          <li><a href="#Contact">Contact</a></li>
         </ul>
       </div>
   </div>
 
   <section class="about-section" id="About">
-    <div class="about-container">
+    <div class="about-container fade">
     <div class="section-title">
       <h2>About</h2>
       <span>自己紹介</span>
@@ -110,55 +111,60 @@
       
   </div>
   <div class="m-btn">
-    <a href=""><span>Read More</span></a>
+    <a href="./about.html"><span>Read More</span></a>
     <i class="fa-solid fa-angles-right"></i>
   </div>
   </section>
 
   <section class="news-section" id="News">
-    <div class="news-inner">
+    <div class="news-inner container fade">
     <div class="section-title">
       <h2>News</h2>
       <span>お知らせ</span>
     </div>
-    <ul class="news-list">
-      <li>
-        <div class="news-item">
-        <time datetime="2023.11.10">2023.11.10</time>
-        <span>初  Node.js</span>
+    <div class="news-list">
+      <div class="news-content">
+        <div class="data">
+          <time datetime="2023.11.10">2023.11.10</time>
+          <span>News</span>
+        </div>
         <a class="n-link" href="#">Node.jsの学習始めました</a>
       </div>
-      </li>
-      <li>
-       <div  class="news-item">
-        <time datetime="2023.11.8">2023.11.8</time>
-        <span>初  React</span>
+      <div class="news-content">
+        <div class="data">
+          <time datetime="2023.11.8">2023.11.8</time>
+          <span>News</span>
+        </div>
         <a class="n-link" href="#">Reactの学習始めました</a>
       </div>
-      </li>
-      <li>
-        <div  class="news-item">
-        <time datetime="2023.11.7">2023.11.7</time>
-        <span>初   Figma</span>
-        <a class="n-link" href="#">Figmaを使用してデザインカンプ始めました。</a>
+      <div class="news-content">
+        <div class="data">
+          <time datetime="2023.11.7">2023.11.7</time>
+          <span>News</span>
+        </div>
+        <a class="n-link" href="#">Figma始めました</a>
       </div>
-      </li>
-    </ul>
-  <a class="m-btn"href="#">Read More</a>
-</div>
+    </div>
+    
+        <a class="m-btn" href="./news.html">
+          <span>Read More</span>
+        <i class="fa-solid fa-angles-right"></i>
+        </a>
+    </div>
 </div>
   </section>
 
   <section class="works" id="Works">
-    <div class="works-container">
-      <div class="section-title">
-          <h2>Works</h2>
-          <span>制作実績</span>
-      </div>
+    <div class="section-title">
+      <h2>Works</h2>
+      <span>制作実績</span>
+  </div>
+    <div class="works-container container fade">
+      
     <div class="works-inner">
         <div class="works-item">
           <div class="card">
-          <a href=""><img src="./img2/Rectangle 51pondesign.png"width="240" height="240" alt=""></a>
+          <a href="./コーディング練習/index.html"><img src="./img2/Rectangle 51pondesign.png"width="240" height="240" alt=""></a>
         <div class="works-text">
           <h3>Web制作</h3>
           <p>PON DESIGN<br>
@@ -170,7 +176,7 @@
       </div>
         <div class="works-item">
           <div class="card">
-          <a href="#"><img src="./img2/Rectangle 50shoes.png" width="240" height="240"alt=""></a>
+          <a href="./shoes/index.html"><img src="./img2/Rectangle 50shoes.png" width="240" height="240"alt=""></a>
           <div class="works-text">
           <h3>Web制作</h3>
           <p>靴のWebサイト<br>
@@ -182,7 +188,7 @@
         </div>
         <div class="works-item">
            <div class="card">
-          <a href="#"><img src="./img2/スクリーンショット 2023-11-17 21.23 1green.png" width="240" height="240"alt=""></a>
+          <a href="./Greentree/imdex.html"><img src="./img2/スクリーンショット 2023-11-17 21.23 1green.png" width="240" height="240"alt=""></a>
           <div class="works-text">
           <h3>Web制作</h3>
           <p>オーガニック野菜の<br>
@@ -206,7 +212,7 @@
         </div>
         <div class="works-item">
            <div class="card">
-            <a href="#"><img src="./img2/IMG_2465 1ケーキ.png" width="240" height="240"alt=""></a>
+            <a href="./works.html"><img src="./img2/IMG_2465 1ケーキ.png" width="240" height="240"alt=""></a>
             <div class="works-text">
             <h3>Dessert Creater</h3>
             <p>パティシエ歴２１年<br>
@@ -220,7 +226,7 @@
           </div>
           <div class="works-item">
            <div class="card">
-            <a href="#"><img src="./img2/IMG_0141 1photo.png" width="240" height="240"alt=""></a>
+            <a href="./works.html"><img src="./img2/IMG_0141 1photo.png" width="240" height="240"alt=""></a>
             <div class="works-text">
             <h3>Hobby</h3>
             <p>IT学習、料理、お菓子全般<br>
@@ -232,7 +238,7 @@
           </div>
           </div>   
       </div> 
-      <a class="m-btn"href="#">
+      <a class="m-btn" href="./works.html">
         <span>Gallery  page</span>
         <i class="fa-solid fa-angles-right"></i>
       </a>
@@ -240,7 +246,7 @@
   </section>
 
   <section class="contact" id="Contact">
-    <div class="contact-container">
+    <div class="contact-container container">
       <div class="contact-inner">
     <div class="section-title">
       <h2>Contact</h2>
@@ -281,19 +287,27 @@
   </section>
 
   <footer class="footer" id="Footer">
-    <nav class="footer-nav">
+    <nav class="footer-nav container">
       <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#news">News</a></li>
-        <li><a href="#works">Works</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="#About">About</a></li>
+        <li><a href="#News">News</a></li>
+        <li><a href="#Works">Works</a></li>
+        <li><a href="#Contact">Contact</a></li>
       </ul>
      </nav>
+     <div class="footer-icon">
+      <i class="fa-brands fa-x-twitter"><a href="https://twitter.com/" target="_blank"></a></i>
+      <i class="fa-brands fa-square-instagram"><a href="https://www.instagram.com/" target="_blank"></a></i>
+      <i class="fa-brands fa-facebook"><a href="https://www.facebook.com/"></a></i>
+      <i class="fa-brands fa-github"><a href="https://github.com/usamiyouhei"></a></i>
+      <i class="fa-brands fa-youtube"><a href="https://www.youtube.com/"></a></i>
+    </div>
      <div class="info">
       <h4>Infomation</h4>
       <p>〒460-0067<br>
       愛知県名古屋市千種区池下2-2-8<br>
       正木ビル1-A<br>
+      052-753-9669
     </p>
      </div>
      <div class="copy-right">

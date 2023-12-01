@@ -1,0 +1,256 @@
+html{
+  font-family: 'Noto Serif JP', serif;
+  overflow: auto;
+}
+body{
+  font-size: 16px;
+  overflow-x: hidden;
+}
+p{
+  line-height: 137.5%;
+}
+h1, h2, h3{
+  font-weight: bold;
+}
+h1, h2{
+  font-size: 30px;
+}
+h2{
+  text-align: center;
+  margin-bottom: 40px;
+}
+a{
+  transition: .5s;
+}
+a:hover{
+  opacity: .5;
+}
+.container{
+  max-width: 1240px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+/* header */
+header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 116px;
+  z-index: 100;
+  background-color: #fff;
+}
+header .container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 116px;
+}
+.h-btn{
+  width: 64px;
+  height: 41px;
+  position: relative;
+  cursor: pointer;
+  z-index: 200;
+}
+.h-btn>span{
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  height: 1px;
+  background-color: #000;
+  transition: .5s;
+}
+.h-btn>span:first-of-type{
+  top: 0;
+}
+.h-btn>span:nth-of-type(2){
+  top: 50%;
+}
+.h-btn>span:last-of-type{
+  top: 100%;
+}
+.active .h-btn>span{
+  background-color: #fff;
+}
+.active .h-btn>span:first-of-type, .active .h-btn>span:last-of-type{
+  top: 50%;
+}
+.active .h-btn>span:first-of-type{
+  transform: translate(-50%, -50%) rotate(135deg);
+}
+.active .h-btn>span:nth-of-type(2){
+  opacity: 0;
+}
+.active .h-btn>span:last-of-type{
+  transform: translate(-50%, -50%) rotate(-135deg);
+}
+.fix-menu{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 400px;
+  padding: 40px;
+  background-color: #2B2B2B;
+  height: 100vh;
+  z-index: 250;
+  color: #fff;
+  transform: translateX(-100vw);
+  transition: .5s
+}
+.active .fix-menu{
+  transform: translateX(0);
+}
+.fix-menu li{
+  text-align: center;
+  border-bottom: solid 1px #fff;
+}
+.fix-menu li:first-of-type{
+  padding-bottom: 20px;
+}
+.fix-menu li + li{
+  padding: 20px 0;
+}
+.overlay{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, .47);
+  z-index: 150;
+  transform: translateX(-100vw);
+  transform: .5s;
+}
+.active .overlay{
+  transform: translateX(0);
+}
+main{
+  margin-top: 116px;
+}
+.kv video{
+  width: 100%;
+}
+/* sec spacer */
+.top-sec, .top-sec2{
+  padding: 80px 0 120px;
+}
+.mySwiper{
+  overflow: unset;
+}
+.swiper-slide img{
+  width: 100%;
+}
+.item-list{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px calc((100% - 96%) / 2);
+}
+.item{
+  width: 32%;
+  height: 451px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, .16);
+  transform: translateY(20px);
+  opacity: 0;
+  transition: .5s;
+}
+.item.show{
+  transform: translateY(0);
+  opacity: 1;
+}
+.item picture img{
+  width: 100%;
+}
+.item div{
+  padding: 40px 8%;
+}
+.item div p{
+  padding-top: 20px;
+}
+.top-sec3{
+  padding: 80px 0 20px;
+  background-color: #2B2B2B;
+  color: #fff;
+}
+.contact{
+  display: flex;
+  justify-content: space-between;
+  max-width: 1077px;
+  margin: 0 auto 40px;
+}
+.contact div{
+  width: 51%;
+}
+.contact div h3{
+  font-size: 20px;
+  margin-bottom: 40px;
+}
+.contact form{
+  width: 40.85%;
+}
+.contact form label{
+  display: block;
+  margin-bottom: 10px;
+}
+.contact form input, .contact form textarea{
+  width: 100%;
+  background-color: #fff;
+  padding: 10px;
+  margin-bottom: 20px;
+  color: #000;
+}
+.contact form button{
+  width: 226px;
+  height: 70px;
+  line-height: 70px;
+  text-align: center;
+  border: solid 1px #fff;
+}
+.top-sec3 small{
+  display: block;
+  text-align: center;
+  font-size: 12px;
+}
+@media screen and (max-width: 750px){
+  header, header .container{
+    height: 78px;
+  }
+  .h-btn{
+    width: 45.73px;
+    height: 27.75px;
+  }
+  .fix-menu{
+    width: 60%;
+  }
+  main{
+    margin-top: 78px;
+  }
+  .top-sec, .top-sec2{
+    padding: 40px 0 80px;
+  }
+  .item-list{
+    gap: 40px 0;
+  }
+  .item{
+    width: 100%;
+    height: 118vw;
+  }
+  .item div{
+    padding: 20px 8%;
+  }
+  .top-sec3{
+    padding: 40px 0 20px;
+  }
+  .contact{
+    flex-wrap: wrap;
+    gap: 40px 0;
+  }
+  .contact div, .contact form{
+    width: 100%;
+  }
+  .contact form button{
+    display: block;
+    margin: 0 auto;
+  }
+}

@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>camp</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500;700&family=Noto+Serif+JP:wght@500;700&family=Shippori+Mincho:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="h-btn">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <nav class="menu">
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#blog">Blog</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div class="kv">
+        <h1>Camp Gallery</h1>
+      </div>
+
+      <div class="top-sec fade" id="about">
+        <div class="container">
+          <div class="content">
+            <h2>About</h2>
+            <p>
+              テキストテキストテキストテキストテキストテキストテキストテキストテキスト<br />
+              テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+            </p>
+          </div>
+          <img src="img/about.jpg" alt="写真家" />
+        </div>
+      </div>
+      <div class="top-sec2 fade" id="gallery">
+        <div class="container">
+          <h2>Camp Gallery</h2>
+          <div class="list">
+            <div data-modal="modalOne">
+              <img src="img/Gallery.jpg" alt="テント" />
+              <p>Gallery</p>
+            </div>
+            <div data-modal="modalTwo">
+              <img src="img/Gallery2.jpg" alt="テント" />
+              <p>Gallery</p>
+            </div>
+            <div data-modal="modalThree">
+              <img src="img/Gallery3.jpg" alt="テント" />
+              <p>Gallery</p>
+            </div>
+            <div data-modal="modalFour">
+              <img src="img/Gallery4.jpg" alt="ランタン" />
+              <p>Gallery</p>
+            </div>
+            <div data-modal="modalFive">
+              <img src="img/Gallery5.jpg" alt="焚き火" />
+              <p>Gallery</p>
+            </div>
+            <div data-modal="modalSix">
+              <img src="img/Gallery6.jpg" alt="テント" />
+              <p>Gallery</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- modal -->
+      <!-- modal One -->
+      <div id="modalOne" class="modal close">
+        <div class="modal-bg">
+          <div class="modal-content">
+            <div>
+              <div class="modal-btn close">
+                <div>
+                  <span></span>
+                  <span></span>
+                </div>
+              </div>
+              <img src="img/modal.jpg" alt="テント" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- modal Two -->
+      <div id="modalTwo" class="modal close">
+        <div class="modal-bg">
+          <div class="modal-content">
+            <div>
+              <div class="modal-btn close">
+                <div>
+                  <span></span>
+                  <span></span>
+                </div>
+              </div>
+              <img src="img/modal2.jpg" alt="テント" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- modal three -->
+      <div id="modalThree" class="modal close">
+        <div class="modal-bg">
+          <div class="modal-content">
+            <div>
+              <div class="modal-btn close">
+                <div>
+                  <span></span>
+                  <span></span>
+                </div>
+              </div>
+              <img src="img/modal3.jpg" alt="テント" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- modal Four -->
+      <div id="modalFour" class="modal close">
+        <div class="modal-bg">
+          <div class="modal-content">
+            <div>
+              <div class="modal-btn close">
+                <div>
+                  <span></span>
+                  <span></span>
+                </div>
+              </div>
+              <img src="img/modal4.jpg" alt="ランタン" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- modal Five -->
+      <div id="modalFive" class="modal close">
+        <div class="modal-bg">
+          <div class="modal-content">
+            <div>
+              <div class="modal-btn close">
+                <div>
+                  <span></span>
+                  <span></span>
+                </div>
+              </div>
+              <img src="img/modal5.jpg" alt="焚き火" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- modal Six -->
+      <div id="modalSix" class="modal close">
+        <div class="modal-bg">
+          <div class="modal-content">
+            <div>
+              <div class="modal-btn close">
+                <div>
+                  <span></span>
+                  <span></span>
+                </div>
+              </div>
+              <img src="img/modal6.jpg" alt="テント" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="top-sec3" id="blog">
+        <div class="container">
+          <h2>Blog</h2>
+          <!-- Slider main container -->
+          <div class="swiper mySwiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide">
+                <a href="#">
+                <img src="img/slide.jpg" alt="テント">
+                <p>ブログタイトル</p>
+              </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#">
+                <img src="img/slide2.jpg" alt="キャンプ">
+                <p>ブログタイトル</p>
+              </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#">
+                <img src="img/slide3.jpg" alt="キャンプ">
+                <p>ブログタイトル</p>
+              </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#">
+                <img src="img/slide4.jpg" alt="テント">
+                <p>ブログタイトル</p>
+              </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#">
+                <img src="img/slide5.jpg" alt="カメラ">
+                <p>ブログタイトル</p>
+              </a>
+              </div>
+              
+            </div>
+            <!-- If we need navigation buttons -->
+            <div class="btn-wrapper">
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer>
+        <strong>CampGallery</strong>
+        <nav>
+          <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#blog">Blog</a></li>
+          </ul>
+          <small>©︎Camp Gallery</small>
+        </nav>
+      </footer>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
