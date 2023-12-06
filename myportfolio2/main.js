@@ -54,22 +54,53 @@ window.addEventListener('scroll', function(){
     var targetTop = fade[i].offsetTop;
 
     //画面のスクロール量 + 300px > .fadeのoffsetの高さ
-    if(window.scrollY + 300 > targetTop){
+    if(window.scrollY + 100 > targetTop){
       fade[i].classList.add('show');
     }
   }
 });
 //scroll_effect
-$(window).scroll(function () {
-  var scrollAnimationElm = document.querySelectorAll('.scroll_up');
-  var scrollAnimationFunc = function () {
-    for (var i = 0; i < scrollAnimationElm.length; i++) {
-      var triggerMargin = 100;
-      if (window.innerHeight > scrollAnimationElm[i].getBoundingClientRect().top + triggerMargin) {
-        scrollAnimationElm[i].classList.add('on');
-      }
-    }
+// $(window).scroll(function () {
+//   var scrollAnimationElm = document.querySelectorAll('.scroll_up');
+//   var scrollAnimationFunc = function () {
+//     for (var i = 0; i < scrollAnimationElm.length; i++) {
+//       var triggerMargin = 100;
+//       if (window.innerHeight > scrollAnimationElm[i].getBoundingClientRect().top + triggerMargin) {
+//         scrollAnimationElm[i].classList.add('on');
+//       }
+//     }
+//   }
+//   window.addEventListener('load', scrollAnimationFunc);
+//   window.addEventListener('scroll', scrollAnimationFunc);
+// });
+
+// 要素とフッターの取得
+const elementToToggle = document.getElementById('elementToToggle');
+const footer = document.getElementById('footer');
+
+// スクロール時のイベントリスナーを追加
+window.addEventListener('scroll', () => {
+  // 要素の位置とサイズを取得
+  const elementRect = elementToToggle.getBoundingClientRect();
+  const footerRect = footer.getBoundingClientRect();
+
+  // 要素がフッターに近づいたら非表示にする
+  if (elementRect.bottom > footerRect.top) {
+    elementToToggle.style.opacity = 0; // フェードアウト
+  } else {
+    elementToToggle.style.opacity = 1; // フェードイン
   }
-  window.addEventListener('load', scrollAnimationFunc);
-  window.addEventListener('scroll', scrollAnimationFunc);
 });
+// // 要素の取得
+// const fadeElement = document.getElementById('fadeElement');
+
+// // スクロール時のイベントリスナーを追加
+// window.addEventListener('scroll', () => {
+//   // 要素の位置とサイズを取得
+//   const elementRect = fadeElement.getBoundingClientRect();
+
+//   // 要素が画面内に入ったらフェードイン
+//   if (elementRect.top < window.innerHeight) {
+//     fadeElement.style.opacity = 1;
+//   }
+// });
