@@ -44,7 +44,7 @@ pageTop.addEventListener("click", function () {
 });
 
 // フェードイン
-//スクロールイベント
+スクロールイベント
 window.addEventListener('scroll', function(){
   //すべての.fadeを取得
   const fade = document.querySelectorAll('.fade');
@@ -54,7 +54,7 @@ window.addEventListener('scroll', function(){
     var targetTop = fade[i].offsetTop;
 
     //画面のスクロール量 + 300px > .fadeのoffsetの高さ
-    if(window.scrollY + 100 > targetTop){
+    if(window.scrollY + 300 > targetTop){
       fade[i].classList.add('show');
     }
   }

@@ -37,7 +37,7 @@
   <section  class="mainvisual">
       <div class="mv-container container">
           <div class="main-container1 ">
-              <div class="logo">
+              <div class="logo ">
                 <img src="./img2/Youhei USAMIlogo.svg" alt="">
               </div>
               <div class="suv-title-container">
@@ -78,17 +78,17 @@
           </div>
               <div class="slide-menu">
                 <ul>
-                  <li><a href="#About">About</a></li>
-                  <li><a href="#News">News</a></li>
-                  <li><a href="#Works">Works</a></li>
-                  <li><a href="#Contact">Contact</a></li>
+                  <li><a href="#about">About</a></li>
+                  <li><a href="#news">News</a></li>
+                  <li><a href="#works">Works</a></li>
+                  <li><a href="#contact">Contact</a></li>
                 </ul>
               </div>
         </div>
 
         <!-- about -->
    <section class="about-section fade" id="about">
-       <div class="about-container container" >
+       <div class="about-container container" id="fadeElement">
           <div class="section-title">
               <h2>About</h2>
               <span>自己紹介</span>
@@ -109,16 +109,26 @@
               </p>
             </div>
               <img src="./img2/about.png" alt="">
-          </div>
-            <div class="m-btn">
-                <a href="./about.html"><span>Read More</span></a>
-                <i class="fa-solid fa-angles-right"></i>
-            </div>
+          </div>  
        </div>
+    </div>
+    <div class="about-btn">
+      <a class="m-btn" href="./about.html">
+        <span>Read More</span>
+      <i class="fa-solid fa-angles-right"></i>
+      </a>
+    </div>
      </section>
 
+     <!-- btn -->
+     <div class="btn_box">
+      <a href="" class="btn_type01 btn opa"><span>more</span></a>
+    </div>
+
+    <a class="button-hex2">Read more</a>
+
      <!-- news -->
-     <section class="news-section fade" id="News">
+     <section class="news-section" id="news">
         <div class="news-inner container">
           <div class="section-title">
               <h2>News</h2>
@@ -147,10 +157,12 @@
                 <a class="n-link" href="#">Figma始めました</a>
             </div>
           </div>
+          <div>
                 <a class="m-btn" href="./news.html">
                   <span>Read More</span>
                 <i class="fa-solid fa-angles-right"></i>
                 </a>
+                </div>
          </div>
       </section>
 
@@ -294,10 +306,10 @@
         <footer class="footer" id="footer">
             <nav class="footer-nav container">
               <ul>
-                <li><a href="#About">About</a></li>
-                <li><a href="#News">News</a></li>
-                <li><a href="#Works">Works</a></li>
-                <li><a href="#Contact">Contact</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#news">News</a></li>
+                <li><a href="#works">Works</a></li>
+                <li><a href="#contact">Contact</a></li>
               </ul>
             </nav>
             <div class="footer-icon">
@@ -307,7 +319,7 @@
                 <a href="https://github.com/usamiyouhei"><i class="fa-brands fa-github"></i></a>
                 <a href="https://www.youtube.com/"><i class="fa-brands fa-youtube"></i></a>
             </div>
-            <div class="info">
+            <div class="info container">
                 <h4>Infomation</h4>
                 <p>〒460-0067<br>
                 愛知県名古屋市千種区池下2-2-8<br>
