@@ -11,8 +11,8 @@ document.querySelectorAll('a[href^="#"]').forEach(function (anchor) {
   anchor.addEventListener("click", function (event) {
     event.preventDefault();
     let speed = 300;
-    var href = anchor.getAttribute("href");
-    var target =
+    let href = anchor.getAttribute("href");
+    let target =
       href === "#" || href === ""
         ? document.documentElement
         : document.querySelector(href);
@@ -25,40 +25,40 @@ document.querySelectorAll('a[href^="#"]').forEach(function (anchor) {
   });
 });
 
-let pageTop = document.querySelector(".page-top");
+// let pageTop = document.querySelector(".page-top");
 
-window.addEventListener("scroll", function () {
-  if (window.scrollY > 300) {
-    pageTop.style.display = "block";
-  } else {
-    pageTop.style.display = "none";
-  }
-});
+// window.addEventListener("scroll", function () {
+//   if (window.scrollY > 300) {
+//     pageTop.style.display = "block";
+//   } else {
+//     pageTop.style.display = "none";
+//   }
+// });
 
-pageTop.addEventListener("click", function () {
-  window.scrollTo({
-    top: 0,
-    behavior: "smooth",
-  });
-  return false;
-});
+// pageTop.addEventListener("click", function () {
+//   window.scrollTo({
+//     top: 0,
+//     behavior: "smooth",
+//   });
+//   return false;
+// });
 
 // フェードイン
-スクロールイベント
-window.addEventListener('scroll', function(){
-  //すべての.fadeを取得
-  const fade = document.querySelectorAll('.fade');
+// スクロールイベント
+// window.addEventListener('scroll', function(){
+//   //すべての.fadeを取得
+//   const fade = document.querySelectorAll('.fade');
 
-  for(let i = 0; i < fade.length; i++){
-    //fadeの高さ取得
-    var targetTop = fade[i].offsetTop;
+//   for(let i = 0; i < fade.length; i++){
+//     //fadeの高さ取得
+//     var targetTop = fade[i].offsetTop;
 
-    //画面のスクロール量 + 300px > .fadeのoffsetの高さ
-    if(window.scrollY + 300 > targetTop){
-      fade[i].classList.add('show');
-    }
-  }
-});
+//     //画面のスクロール量 + 300px > .fadeのoffsetの高さ
+//     if(window.scrollY + 300 > targetTop){
+//       fade[i].classList.add('show');
+//     }
+//   }
+// });
 //scroll_effect
 // $(window).scroll(function () {
 //   var scrollAnimationElm = document.querySelectorAll('.scroll_up');
@@ -76,18 +76,20 @@ window.addEventListener('scroll', function(){
 
 // 要素とフッターの取得
 const elementToToggle = document.getElementById('elementToToggle');
-const footer = document.getElementById('footer');
+const contact = document.getElementById('contact');
 
 // スクロール時のイベントリスナーを追加
 window.addEventListener('scroll', () => {
   // 要素の位置とサイズを取得
   const elementRect = elementToToggle.getBoundingClientRect();
-  const footerRect = footer.getBoundingClientRect();
+  const contactRect = contact.getBoundingClientRect();
 
   // 要素がフッターに近づいたら非表示にする
-  if (elementRect.bottom > footerRect.top) {
+  if (elementRect.bottom > contactRect.top) {
+    elementToToggle.style.transition = "opacity 0.5s";
     elementToToggle.style.opacity = 0; // フェードアウト
   } else {
+    elementToToggle.style.transition = "opacity 0.5s";
     elementToToggle.style.opacity = 1; // フェードイン
   }
 });
