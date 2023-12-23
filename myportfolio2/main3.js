@@ -59,3 +59,13 @@ window.addEventListener('scroll', function(){
     }
   }
 });
+let swipeOption = {
+  loop: true,
+  effect: 'fade',
+  autoplay: {
+    delay: 3000,
+    disableOnInteraction: false,
+  },
+  speed: 2000,
+}
+new Swiper('.swiper-container', swipeOption); 

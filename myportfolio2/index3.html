@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>portfolio top</title>
+  
    <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
@@ -25,54 +26,17 @@
   <link rel="stylesheet" href="./style3.css">
 </head>
 <body>
-  <!-- <header class="header" id="Header">
-    <nav class="header-nav">
-      <ul>
-        <li><a href="#About">About</a></li>
-        <li><a href="#News">News</a></li>
-        <li><a href="#Works">Works</a></li>
-        <li><a href="#Contact">Contact</a></li>
-      </ul>
-     </nav>
-  </header> -->
-  
-  <!-- mainvisual -->
-  <section  class="mainvisual">
-      <div class="mv-container ">
-        <div class="kv">
-          <div class="main-img"></div>
-          <div class="main-img"></div>
-          <div class="main-img"></div>
-          <div class="main-img"></div>
-          <div class="main-img"></div>
+  <header class="header container" id="Header">
+    <div class="sidebar">
+          <div class="side-btn">
+            <span>MENU</span>
+            <div class="hbg-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
           </div>
-          <!-- <h1 class="logo "> -->
-            <h1><img src="./img2/Youhei USAMIlogo.svg" alt=""></h1>
-          <!-- </h1> -->
-          <div class="suv-title-container">
-            <h2 class="suv-title1">Web Designer</h2>
-            <h2 class="suv-title2">Programmer</h2>
-            <h2 class="suv-title3">Dessert Creator</h2>
-           </div>
-           
-          <span class="scroll">scroll</span>
-        </div>
-        <div class="main-title">
-          <img src="./img2/Creating the Only One...タイトル.svg" alt="">
-        </div>
-              </div>
-            </section>
-       <!-- sidebar -->
-       <div class="sidebar">
-        <div class="side-btn">
-          <span>MENU</span>
-          <div class="hbg-btn">
-              <span></span>
-              <span></span>
-              <span></span>
-          </div>
-        </div>
-      <div class="icon-btn" id="elementToToggle" >
+          <div class="icon-btn" id="elementToToggle" >
             <a href="https://twitter.com/" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
             <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-square-instagram"></i></a>
             <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
@@ -82,16 +46,41 @@
           <div class="slide-menu">
             <ul>
               <li><a href="#about">About</a></li>
+              <li><a href="#service">Service</a></li>
               <li><a href="#news">News</a></li>
               <li><a href="#works">Works</a></li>
               <li><a href="#contact">Contact</a></li>
             </ul>
           </div>
     </div>
+  </header>
+  <!-- mainvisual -->
+  <section  class="mainvisual">
+    <h1 class="logo "><img src="./img2/Youhei USAMIlogo.svg" alt=""></h1>
+    
+      <div class="mv-container ">
+        <div class="kv">
+          <div class="main-img"></div>
+          <div class="main-img"></div>
+          <div class="main-img"></div>
+          <div class="main-img"></div>
+          <div class="main-img"></div>
+          <span class="scroll">scroll</span>
+          <!-- <div class="main-title"> -->
+            <img src="./img2/Creating the Only One...タイトル.svg" alt="">
+          <!-- </div> -->
+        </div>
 
-   
+        </div>
+              </div>
+            </section>
+            <div class="slide">
+              <div class="slide-image"></div>
+              <div class="slide-image"></div>
+              <div class="slide-image"></div>
+         </div>
+       <!-- sidebar -->
 
-   
         <!-- about -->
    <section class="about-section fade" id="about">
        <div class="about-container container" id="fadeElement">
@@ -102,33 +91,95 @@
           <div class="about-inner">
             <div class="p-section">
               <p>
-                宇佐美洋平と申します。<br>
-                本業は名古屋でデザートコースのお店を経営しているオーナーパティシエです。
+                はじめまして、宇佐美洋平と申します。<br>
+                名古屋でデザートコースのお店を経営しているオーナーシェフパティシエです。
               </p>
               <p>
                 作ることが好きでパティシエをしていますが、他にプログラミングでのWeb制作も好きで日々の学習に勤しんでおります。
               </p>
               <p>
-                趣味はお菓子作り（仕事）から料理、写真、
-                観葉植物や陶器など。<br>
-                唯一無二のものが好みです。
+               年間２０００人に対応した接客術やクオリティーの高い制作物、細部まで突き詰める能力をWeb制作にも活かしていきます。
               </p>
+              <p class="policy">即行動・傾聴力・追求心 </p>
+              <p>
+                の三箇条が信念です。
+               </p>
             </div>
-            
               <img src="./img2/about-my-photo.jpg" width="360px" height="400px" alt="">
-          </div>  
-          
+          </div>
        </div>
-       
         <a class="m-btn" href="./about.html">
           <span>Read More</span>
         </a>
-      
     </div>
-    
      </section>
+      <!-- service -->
+    <section class="service-section" id="service">
+      <div class="service-inner container">
+          <div class="section-title">
+            <span>Service</span>
+            <h2>事業内容</h2>
+        </div>
+        <div class="service-wrap">
+            <div class="service-list">
+              <h3>Webサイト制作</h3>
+              <img src="./img2/website1.png" alt="">
+              <p>
+                新規サイトの制作はもちろん、レスポンシブコーディングやアニメーションなど動きのあるサイト制作も可能です。
+              </p>
+            </div>
+            <div class="service-list">
+              <h3>Webデザイン</h3>
+              <img src="./img2/design.png" alt="">
+              <p>
+                クライアント様からのイメージを詳しくお聞きし、より良いデザインを作っていきます。
+              </p>
+            </div>
+            <div class="service-list">
+              <h3>Webサイトリニューアル</h3>
+              <img src="./img2/siterenewal.png" alt="">
+              <p>
+               現状のWebサイトの改良や修正なども可能です。
+              </p>
+            </div>
+            <div class="service-list">
+              <h3>飲食店コンサルタント</h3>
+              <img src="./img2/consulting.png" alt="">
+              <p>
+               飲食店、パティシエの経験を活かしコンサルタントを行っております。<br>
+               ケーキ屋、カフェ、デザート屋などお気軽にご相談ください。
+              </p>
+            </div>
+            <div class="service-list">
+              <h3>レシピ開発</h3>
+              <img src="./img2/cake.png" alt="">
+              <p>
+               ２０年分のレシピや新作の考え方を活かしてレシピ１品から承ります。<br>
+               栄養学も学習中で体に良いものも考案できます。
+              </p>
+            </div>
+            <div class="service-list">
+              <h3>写真・動画撮影</h3>
+              <img src="./img2/camera.png" alt="">
+              <p>
+               写真、動画撮影も承ります。<br>
+               ポートフォリオの写真は自分が撮影しました。
+              </p>
+            </div>
+        </div>
 
-    
+    </section>
+     <article>
+      <div class="loop_wrap">
+          <div class="first">
+            Web Designer &nbsp;Programmer &nbsp;Dessert Creator &nbsp;
+          </div>
+          <div class="second">
+            Web Designer &nbsp;Programmer &nbsp;Dessert Creator &nbsp;
+          </div>
+        </div>
+    </article>
+   
      <!-- news -->
      <section class="news-section" id="news">
         <div class="news-inner container">
@@ -178,13 +229,13 @@
              <div class="card-box">
                 <div class="card">
                   <a class="image" href="./コーディング練習/index.html"><img src="./img2/works1.png" alt=""></a>
-                  <h3 class="text">Web制作</h3>
-                  <p>PON DESIGN<br>
+                  <h3 class="works-text">Web制作</h3>
+                  <!-- <p>PON DESIGN<br>
                     デザイン会社のサイト制作<br>
                     コーディング<br>
                     アニメーションやJavascriptで<br>
                     動きをつけました。
-                    </p>
+                    </p> -->
                 </div>
               </div>
                <div class="card-box">
@@ -192,11 +243,11 @@
                     <a class="image" href="./shoes/index.html"><img src="./img2/works2.png" alt=""></a>
                   <div class="works-text">
                   <h3>Web制作</h3>
-                  <p>靴のWebサイト<br>
+                  <!-- <p>靴のWebサイト<br>
                     コーディング<br>
                     jQuery導入し、<br>
                     動きをつけました。
-                  </p>
+                  </p> -->
                 </div>
               </div>
              </div>
@@ -205,11 +256,11 @@
                       <a class="image" href="./Greentree/imdex.html"><img src="./img2/works3.png" alt=""></a>
                       <div class="works-text">
                           <h3>Web制作</h3>
-                          <p>オーガニック野菜の<br>
+                          <!-- <p>オーガニック野菜の<br>
                             Webサイトコーディング<br>
                             jQuery導入し、<br>
                           動きをつけました。
-                        </p>
+                        </p> -->
                      </div>
                   </div>
                </div>
@@ -218,11 +269,11 @@
                       <a class="image" href=""><img src="./img2/works7.png" alt=""></a>
                       <div class="works-text">
                           <h3>Web制作</h3>
-                          <p>オーガニック野菜の<br>
+                          <!-- <p>オーガニック野菜の<br>
                             Webサイトコーディング<br>
                             jQuery導入し、<br>
                           動きをつけました。
-                        </p>
+                        </p> -->
                      </div>
                   </div>
                </div>
@@ -231,11 +282,11 @@
                       <a class="image" href="./CAMP/index.html"><img src="./img2/works11.png" alt=""></a>
                       <div class="works-text">
                           <h3>Web制作</h3>
-                          <p>オーガニック野菜の<br>
+                          <!-- <p>オーガニック野菜の<br>
                             Webサイトコーディング<br>
                             jQuery導入し、<br>
                           動きをつけました。
-                        </p>
+                        </p> -->
                      </div>
                   </div>
                </div>
@@ -243,12 +294,11 @@
                    <div class="card">
                       <a class="image" href="#"><img src="./img2/works4.png"  alt=""></a>
                       <div class="works-text">
-                          <h3>Figma<br>
-                            デザインカンプ</h3>
-                          <p>Figmaを使用して<br>
+                          <h3>Figmaデザインカンプ</h3>
+                          <!-- <p>Figmaを使用して<br>
                             デザインカンプも<br>
                             制作しております。
-                          </p>
+                          </p> -->
                        </div>
                     </div>
                  </div>
@@ -257,13 +307,13 @@
                         <a class="image" href="./works.html"><img src="./img2/works8.png" alt=""></a>
                           <div class="works-text">
                             <h3>Dessert Creater</h3>
-                            <p>パティシエ歴２１年<br>
+                            <!-- <p>パティシエ歴２１年<br>
                               今までの知識を活かし、<br>
                               デザートレストランを<br>
                               経営しております。<br>
                               コンサルティングも<br>
                               ご相談ください。
-                            </p>
+                            </p> -->
                          </div>
                      </div>
                 </div>
@@ -272,12 +322,12 @@
                         <a class="image" href="./works.html"><img src="./img2/works5.png" alt=""></a>
                           <div class="works-text">
                             <h3>Order made cake</h3>
-                            <p>世界に一台の<br>
+                            <!-- <!-- <p>世界に一台の<br>
                               オーダーメイドケーキを<br>
                               作成しております。<br>
                               ご要望に応じてデコレーション<br>
-                              可能ですのでご相談ください。</p>
-                         </div>
+                              可能ですのでご相談ください。</p> -->
+                            </div>
                      </div>
                 </div>
                <div class="card-box">
@@ -285,12 +335,12 @@
                      <a class="image" href="./works.html"><img src="./img2/works6.png" alt=""></a>
                         <div class="works-text">
                             <h3>Hobby</h3>
-                            <p>IT学習、料理、お菓子全般<br>
+                            <!-- <p>IT学習、料理、お菓子全般<br>
                               の栄養学、写真、陶器、<br>
                               観葉植物が趣味です。<br>
                               ご要望がございましたら<br>
                               ご相談ください。
-                            </p>
+                            </p> -->
                          </div>
                      </div>
                  </div>   
@@ -310,7 +360,8 @@
                 <h2>お問い合わせ</h2>
             </div>
                 <p>無料相談も行っておりますので<br>
-                  お気軽にお問い合せください。</p>
+                  お気軽にお問い合せください。<br>
+                ３日以内に返信させて頂きます。</p>
           </div>
             <div class="contact-form">
                <form action="#" method="post">
@@ -345,6 +396,7 @@
             <nav class="footer-nav container">
               <ul>
                 <li><a href="#about">About</a></li>
+                <li><a href="#service">Service</a></li>
                 <li><a href="#news">News</a></li>
                 <li><a href="#works">Works</a></li>
                 <li><a href="#contact">Contact</a></li>
@@ -377,6 +429,6 @@
             </a>
         </div>
 
-  <script src="main3.js"></script>
+         <script src="main3.js"></script>
 </body>
 </html>
