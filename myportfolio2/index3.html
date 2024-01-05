@@ -9,6 +9,7 @@
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
     />
+    <link rel="icon" href="./img2/favicon (3).ico" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -24,47 +25,83 @@
   </head>
   <body>
     <header class="header" id="header">
-      <div class="header__inner inner"></div>
-      <div class="header hamburger">
-        <span>MENU</span>
-        <div class="hamburger-button">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
+      <div class="header__inner inner">
+        <h1 class="header__name">
+          <img class="header__logo" src="./img2/Youhei USAMIlogo.svg" alt="" />
+        </h1>
 
-        <div class="header slide-menu">
-          <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#service">Service</a></li>
-            <li><a href="#news">News</a></li>
-            <li><a href="#works">Works</a></li>
-            <li><a href="#contact">Contact</a></li>
+        <nav class="header__nav md-none">
+          <ul class="header__items">
+            <li class="header__item">
+              <a href="#about" class="header__link">About</a>
+            </li>
+            <li class="header__item">
+              <a href="#service" class="header__link">Service</a>
+            </li>
+            <li class="header__item">
+              <a href="#news" class="header__link">News</a>
+            </li>
+            <li class="header__item">
+              <a href="#works" class="header__link">Works</a>
+            </li>
+            <li class="header__item">
+              <a href="#contact" class="header__link header__link--contact"
+                >Contact</a
+              >
+            </li>
           </ul>
-          <div class="icon-button" id="elementToToggle">
-            <a href="https://twitter.com/" target="_blank"
-              ><i class="fa-brands fa-x-twitter"></i
-            ></a>
-            <a href="https://www.instagram.com/" target="_blank"
-              ><i class="fa-brands fa-square-instagram"></i
-            ></a>
-            <a href="https://www.facebook.com/"
-              ><i class="fa-brands fa-facebook"></i
-            ></a>
-            <a href="https://github.com/usamiyouhei"
-              ><i class="fa-brands fa-github"></i
-            ></a>
-            <a href="https://www.youtube.com/"
-              ><i class="fa-brands fa-youtube"></i
-            ></a>
-          </div>
+        </nav>
+      </div>
+      <!-- <div class="header hamburger"> -->
+      <!-- <span>MENU</span> -->
+      <div class="hamburger-button md-show">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <div class="header slide-menu">
+        <ul class="slide-menu__items">
+          <li class="slide-menu__item">
+            <a href="#about" class="slide-menu__link">About</a>
+          </li>
+          <li class="slide-menu__item">
+            <a href="#service" class="slide-menu__link">Service</a>
+          </li>
+          <li class="slide-menu__item">
+            <a href="#news" class="slide-menu__link">News</a>
+          </li>
+          <li class="slide-menu__item">
+            <a href="#works" class="slide-menu__link">Works</a>
+          </li>
+          <li class="slide-menu__item">
+            <a href="#contact" class=slide-menu__link slide-menu__link--contact"
+              >Contact</a
+            >
+          </li>
+        </ul>
+        <div class="icon-button" id="elementToToggle">
+          <a href="https://twitter.com/" target="_blank"
+            ><i class="fa-brands fa-x-twitter"></i
+          ></a>
+          <a href="https://www.instagram.com/" target="_blank"
+            ><i class="fa-brands fa-square-instagram"></i
+          ></a>
+          <a href="https://www.facebook.com/"
+            ><i class="fa-brands fa-facebook"></i
+          ></a>
+          <a href="https://github.com/usamiyouhei"
+            ><i class="fa-brands fa-github"></i
+          ></a>
+          <a href="https://www.youtube.com/"
+            ><i class="fa-brands fa-youtube"></i
+          ></a>
         </div>
       </div>
+      <!-- </div> -->
     </header>
     <!-- mv -->
     <section class="mv">
-      <h1 class="mv__logo"><img src="./img2/Youhei USAMIlogo.svg" alt="" /></h1>
-
       <div class="mv__inner">
         <div class="kv">
           <div class="main-img"></div>
@@ -73,17 +110,11 @@
           <div class="main-img"></div>
           <div class="main-img"></div>
           <span class="kv__scroll">scroll</span>
-
-          <img src="./img2/Creating the Only One...タイトル.svg" alt="" />
+          <img class="mv__title-img" src="./img2/Creating the Only One...タイトル.svg" alt="" />
         </div>
       </div>
     </section>
-    <div class="slide">
-      <div class="slide-image"></div>
-      <div class="slide-image"></div>
-      <div class="slide-image"></div>
-    </div>
-    <!-- sidebar -->
+    
 
     <!-- about -->
     <section class="about" id="about">
@@ -107,12 +138,7 @@
             <p class="about__policy">即行動・傾聴力・追求心</p>
             <p>の三箇条が信念です。</p>
           </div>
-          <img
-            src="./img2/about-my-photo.jpg"
-            width="360px"
-            height="400px"
-            alt=""
-          />
+          <img src="./img2/about-my-photo.jpg" alt="本人の写真" />
         </div>
       </div>
       <a class="read-more__button" href="./about.html">
@@ -315,6 +341,7 @@
           <p class="contact__text">
             無料相談も行っておりますので<br />
             お気軽にお問い合せください。<br />
+            基本的に即レス対応、遅くても<br />
             当日中に返信させて頂きます。
           </p>
           <p class="contact__text">
